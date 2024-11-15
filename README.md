@@ -19,25 +19,15 @@ pip install -r requirements.txt
 
 ## Training
 
-
-
 >📋 To train your Schema classifier model access the "Schema Classifier trained on a custom Schema Based Dataset" part in the colab notebook, you can try different hyperparameter according to your choice. 
 
-## Evaluation
 
-To evaluate my model on ImageNet, run:
-
-```eval
-python eval.py --model-file mymodel.pth --benchmark imagenet
-```
-
->📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
 
 ## Pre-trained Models
 
-You can download pre-trained models here:
+You can download pre-trained schema models here:
 
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
+- [Pre-Trained Schema Classifier Models](https://drive.google.com/drive/folders/1DnT32TGP4XAMuR1AHVeEkO0e3nMg_KmI?usp=sharing) trained on DistilBert using parameters in the training arguments. 
 
 >📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
 
