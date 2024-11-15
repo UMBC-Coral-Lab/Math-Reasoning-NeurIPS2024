@@ -5,7 +5,7 @@
 This repository is the official implementation of [SBI-RAG: Enhancing Math Word Problem Solving for Students through Schema-Based Instruction and Retrieval-Augmented Generation](https://arxiv.org/abs/2410.13293). 
 
 <h2>SBI-RAG Architecture</h2>
-><img src="Assets/SBI_RAG.jpg" alt="SBI-RAG Architecture">
+<img src="Assets/SBI_RAG.jpg" alt="SBI-RAG Architecture">
 
 ## Requirements
 
