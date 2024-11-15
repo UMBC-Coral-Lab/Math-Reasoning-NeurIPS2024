@@ -1,10 +1,10 @@
 >📋  A template README.md for code accompanying a Machine Learning paper
 
-# My Paper Title
+# SBI-RAG
 
 This repository is the official implementation of [SBI-RAG: Enhancing Math Word Problem Solving for Students through Schema-Based Instruction and Retrieval-Augmented Generation](https://arxiv.org/abs/2410.13293). 
 
->📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
+
 ><img src="Assets/SBI_RAG.jpg" alt="SBI-RAG Architecture">
 
 ## Requirements
