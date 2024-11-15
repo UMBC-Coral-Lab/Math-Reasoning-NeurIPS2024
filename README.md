@@ -18,35 +18,3 @@ To install the required packages, run:
 
 ```bash
 pip install -r requirements.txt
-'''
-Environment Setup
-To set up the environment:
-
-Clone this repository.
-Install dependencies from requirements.txt.
-Download the datasets (details below).
-Ensure access to Google Colab or a local setup with GPU support.
-Data Preparation
-This project utilizes two main datasets:
-
-Schema-Based Instruction (SBI) Dataset: A custom dataset of 360 labeled math word problems categorized across six schema sub-categories.
-GSM8K Dataset: A collection of 8.5K grade school math word problems for evaluation.
-Note: The custom SBI dataset can be found in the repository, and GSM8K is openly accessible here.
-
-Training
-To train the Schema Classifier model, access the provided Colab notebook. You can experiment with different hyperparameters in the notebook’s configuration section.
-
-Pre-trained Models
-Pre-trained models are available for download here. These models were trained on DistilBERT using default hyperparameters.
-
-Evaluation
-SBI-RAG is evaluated based on reasoning clarity and correctness. Below is an overview of its performance:
-
-Model	Top 1 Accuracy	Reasoning Score (SBI-RAG)
-SBI-RAG	85%	0.588
-GPT-4	N/A	0.491
-GPT-3.5 Turbo	N/A	0.290
-For detailed evaluation, refer to evaluation_results.md.
-
-Contributing
-This repository follows the MIT License. We welcome contributions! To contribute, fork the repository, create a new branch, and submit a pull request.
