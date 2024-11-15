@@ -1,49 +1,52 @@
+# SBI-RAG: Enhancing Math Word Problem Solving for Students through Schema-Based Instruction and Retrieval-Augmented Generation
 
+This repository provides the official implementation for [SBI-RAG](https://arxiv.org/abs/2410.13293), which leverages Schema-Based Instruction (SBI) and Retrieval-Augmented Generation (RAG) to help students solve math word problems by guiding them through structured, schema-driven steps.
 
-# SBI-RAG
+## Architecture
 
-This repository is the official implementation of [SBI-RAG: Enhancing Math Word Problem Solving for Students through Schema-Based Instruction and Retrieval-Augmented Generation](https://arxiv.org/abs/2410.13293). 
+The SBI-RAG model architecture consists of four main components:
+1. **Schema Classification**: A DistilBERT-based classifier predicts schemas and sub-categories for math word problems.
+2. **Prompt Creation**: Generates structured prompts aligned with identified schemas.
+3. **Context Retrieval**: Uses RAG to retrieve context to support problem-solving.
+4. **Response Generation**: Employs Llama 3.1 to produce schema-driven, step-by-step solutions.
 
-<h2>SBI-RAG Architecture</h2>
-<img src="Assets/SBI_RAG.jpg" alt="SBI-RAG Architecture">
+![SBI-RAG Architecture](Assets/SBI_RAG.jpg)
 
 ## Requirements
 
-To install requirements:
+To install the required packages, run:
 
-```setup
+```bash
 pip install -r requirements.txt
-```
+'''
+Environment Setup
+To set up the environment:
 
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
+Clone this repository.
+Install dependencies from requirements.txt.
+Download the datasets (details below).
+Ensure access to Google Colab or a local setup with GPU support.
+Data Preparation
+This project utilizes two main datasets:
 
-## Training
+Schema-Based Instruction (SBI) Dataset: A custom dataset of 360 labeled math word problems categorized across six schema sub-categories.
+GSM8K Dataset: A collection of 8.5K grade school math word problems for evaluation.
+Note: The custom SBI dataset can be found in the repository, and GSM8K is openly accessible here.
 
->📋 To train your Schema classifier model access the "Schema Classifier trained on a custom Schema Based Dataset" part in the colab notebook, you can try different hyperparameter according to your choice. 
+Training
+To train the Schema Classifier model, access the provided Colab notebook. You can experiment with different hyperparameters in the notebook’s configuration section.
 
+Pre-trained Models
+Pre-trained models are available for download here. These models were trained on DistilBERT using default hyperparameters.
 
+Evaluation
+SBI-RAG is evaluated based on reasoning clarity and correctness. Below is an overview of its performance:
 
-## Pre-trained Models
+Model	Top 1 Accuracy	Reasoning Score (SBI-RAG)
+SBI-RAG	85%	0.588
+GPT-4	N/A	0.491
+GPT-3.5 Turbo	N/A	0.290
+For detailed evaluation, refer to evaluation_results.md.
 
-You can download pre-trained schema models here:
-
-- [Pre-Trained Schema Classifier Models](https://drive.google.com/drive/folders/1DnT32TGP4XAMuR1AHVeEkO0e3nMg_KmI?usp=sharing) trained on DistilBert using parameters in the training arguments. 
-
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
-
-## Results
-
-Our model achieves the following performance on :
-
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
-
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
-
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
-
-
-## Contributing
-
->📋  Pick a licence and describe how to contribute to your code repository. 
+Contributing
+This repository follows the MIT License. We welcome contributions! To contribute, fork the repository, create a new branch, and submit a pull request.
