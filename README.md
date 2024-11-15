@@ -19,11 +19,7 @@ pip install -r requirements.txt
 
 ## Training
 
-To train the model(s) in the paper, run this command:
 
-```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
-```
 
 >📋 To train your Schema classifier model access the "Schema Classifier trained on a custom Schema Based Dataset" part in the colab notebook, you can try different hyperparameter according to your choice. 
 
