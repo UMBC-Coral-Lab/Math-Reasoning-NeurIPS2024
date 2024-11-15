@@ -7,7 +7,6 @@
 </head>
 <body>
     <h1>SBI-RAG: Enhancing Math Word Problem Solving for Students through Schema-Based Instruction and Retrieval-Augmented Generation</h1>
-
     <p>This repository provides the official implementation for <a href="https://arxiv.org/abs/2410.13293">SBI-RAG</a>, which leverages Schema-Based Instruction (SBI) and Retrieval-Augmented Generation (RAG) to help students solve math word problems by guiding them through structured, schema-driven steps.</p>
 
     <h2>Architecture</h2>
